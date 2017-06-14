@@ -1,0 +1,25 @@
+{
+  "name": "pokedex",
+  "version": "0.1.0",
+  "description": "buscador de pokemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Misshel/S42-Pokedex.git"
+  },
+  "author": "jenny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Misshel/S42-Pokedex/issues"
+  },
+  "homepage": "https://github.com/Misshel/S42-Pokedex#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "levelup": "^1.3.8"
+  }
+}
