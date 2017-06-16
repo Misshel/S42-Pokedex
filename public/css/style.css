@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+i{
+  color: #908787;
+  font-size: 2.5rem !important;
+  position: absolute;
+}
+input{
+  padding-left: 1rem;
+}
+button{
+  background-color: #1c501e !important;
+  height: 3rem !important;
+  width: 8rem;
+  font-size: 1.5rem !important;
+}
+font{
+  position: relative;
+  bottom: 0.1rem;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+.fondo{
+  position: absolute;
+  bottom: 11px;
+  left: -10px;
+  transform: scaleY(1.8);
+  width: auto !important;
+  height: auto !important;
+}
+.rowPokemon{
+  padding: 0 0rem 0 7rem !important;
+}
+
+.contPokemon{
+  background-color: #ccc;
+  box-sizing: content-box !important;
+  margin: 1rem 5rem;
+  position: relative;
+  width: 11.666667% !important;
+}
+.contIcon{
+  display: flex;
+  justify-content: center;
+}
+.icon{
+  height: 1.5rem;
+  margin: 1em 0.5em 0;
+  width: 1.5rem;
+  z-index: 1000;
+}

@@ -3,14 +3,15 @@
 const render = (root) => {
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
-  wrapper.append(Pokedex(_ => render(root)));
+  wrapper.append(Header(_ => render(root)));
+  wrapper.append(pokemonSearch( _ => {render(root);}));
 
-  root.append(wrapper);
+root.append(wrapper);
 }
 
 const state = {
   pokedex: null,
-  pokemon: null
+  selectedPokemon: null
 };
 
 $( _ => {
@@ -18,18 +19,9 @@ $( _ => {
   getJSON('http://pokeapi.co/api/v2/pokedex/1/', (err, json) => {
 
     if (err) { return alert(err.message);}
-
     state.pokedex = json;
+    const root = $('#root');
+    render(root);
   });
-
-  getJSON('http://pokeapi.co/api/v2/pokemon-species/1/', (err, json) => {
-
-    if (err) { return alert(err.message);}
-
-    state.pokemon = json;
-  });
-
-  const root = $('.root');
-  render(root);
 
 });
