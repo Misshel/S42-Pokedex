@@ -21,7 +21,7 @@ const modalEfec = (pokemon,name,id)=>{
       detailPokemon(text);
     });
   });
-//tiene la descripcion del pokemon pero se borra al final
+//tiene la descripcion pero se borra al final
   const detailPokemon =(text)=>{
     const p =$(`<p></p>`);
     if (p.innerText == 0) {
