@@ -1,16 +1,22 @@
 *{
   box-sizing: border-box;
 }
+h1{
+  color: #e84848;
+  font-size: 3.8rem;
+  margin-bottom: 4rem;
+}
 i{
-  color: #908787;
+  color: #646464;
   font-size: 2.5rem !important;
   position: absolute;
 }
 input{
-  padding-left: 1rem;
+  padding-left: 3.5rem !important;
+  width: 89% !important;
 }
 button{
-  background-color: #1c501e !important;
+  background-color: #7aa44a !important;
   height: 3rem !important;
   width: 8rem;
   font-size: 1.5rem !important;
@@ -36,10 +42,11 @@ img{
 }
 
 .contPokemon{
-  background-color: #ccc;
+  background-color: #dbdbdb;
   box-sizing: content-box !important;
   margin: 1rem 5rem;
   position: relative;
+  text-transform: capitalize;
   width: 11.666667% !important;
 }
 .contIcon{
@@ -50,5 +57,9 @@ img{
   height: 1.5rem;
   margin: 1em 0.5em 0;
   width: 1.5rem;
+  z-index: 1000;
+}
+.modal{
+  display: none;
   z-index: 1000;
 }
