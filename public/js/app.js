@@ -11,7 +11,9 @@ root.append(wrapper);
 
 const state = {
   pokedex: null,
-  selectedPokemon: null
+  selectedPokemon: null,
+  info:null,
+  descOfPokemon:null
 };
 
 $( _ => {
@@ -22,6 +24,11 @@ $( _ => {
     state.pokedex = json;
     const root = $('#root');
     render(root);
+  });
+  getJSON('http://pokeapi.co/api/v2/pokemon-species/?limit=721&offset=0', (err, json) => {
+
+    if (err) { return alert(err.message);}
+    state.info = json;
   });
 
 });

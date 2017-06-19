@@ -29,11 +29,7 @@ const pokemonItem = (pokemon,update)=>{
   pokeball.on('click',(e) => {
     e.preventDefault();
     state.selectedPokemon = pokemon;
-
-    const modal = $(".modal").css("display","block");
-      modal.append(pokemonItem(pokemon));
-      // modal.append(pokemonDetail());
-
+    modalEfec(pokemon,name,id);
   });
 
   return divpokemon;
@@ -55,7 +51,7 @@ const pokemonSearch= (update) =>{
   const colButton = $('<div class="col s3 offset-s2 center-align"></div>');
   const button = $('<button type="button" class="btn-large" name="button">A - Z</button>');
 
-  const modalCont = $('<div class="col s8 offset-s2 modal"></div>');
+  const contModal = $('<div class="col s12 cont-modal"></div>');
   colSearch.append(label);
   colSearch.append(input);
   colButton.append(button);
@@ -64,7 +60,7 @@ const pokemonSearch= (update) =>{
   row.append(colButton);
 
   rowPokemon.append(colPokemon);
-  rowPokemon.append(modalCont);
+  rowPokemon.append(contModal);
 
   container.append(row);
   container.append(rowPokemon);
