@@ -16,22 +16,26 @@ const modalEfec = (pokemon,name,id)=>{
       if (err) { return alert(err.message);}
       state.descOfPokemon = json;
       const infoIdioma = state.descOfPokemon.flavor_text_entries;
-      var text;
+      const text = "";
       text =infoIdioma[3].flavor_text;
-      detailPokemon(text);
+      // detailPokemon(text);
+      const p =$(`<p>${text}</p>`);
+      // if (p.innerText == 0) {
+      //   p.innerText = text;
+      // }
+      console.log(description);
+      description.append(p);
+
     });
   });
 //tiene la descripcion pero se borra al final
-  const detailPokemon =(text)=>{
-    const p =$(`<p></p>`);
-    if (p.innerText == 0) {
-      p.innerText = text;
-    }
-    return  p;
-  }
+  // const detailPokemon =(text)=>{
+
+  //   // return  p;
+  // }
 
   description.append(title);
-  description.append(detailPokemon);
+  // description.append(detailPokemon);
   modalCont.append(close);
   modalCont.css("display","block");
 
