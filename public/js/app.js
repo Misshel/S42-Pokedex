@@ -18,14 +18,14 @@ const state = {
 
 $( _ => {
 
-  getJSON('http://pokeapi.co/api/v2/pokedex/1/', (err, json) => {
+  getJSON('https://pokeapi.co/api/v2/pokedex/1/', (err, json) => {
 
     if (err) { return alert(err.message);}
     state.pokedex = json;
     const root = $('#root');
     render(root);
   });
-  getJSON('http://pokeapi.co/api/v2/pokemon-species/?limit=721&offset=0', (err, json) => {
+  getJSON('https://pokeapi.co/api/v2/pokemon-species/?limit=721&offset=0', (err, json) => {
 
     if (err) { return alert(err.message);}
     state.info = json;

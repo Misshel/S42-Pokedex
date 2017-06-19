@@ -6,7 +6,7 @@ const pokemonItem = (pokemon,update)=>{
   let name= pokemon.pokemon_species.name;
   id = ("00"+ id).slice(-3);
 
-  const img= $(`<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png" alt="">`);
+  const img= $(`<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png" alt="">`);
   const fondo= $(`<img  class="fondo" src="icon/notch-collectibles.png"></img>`);
 
   const detail = $('<div class="col s12"></div>');

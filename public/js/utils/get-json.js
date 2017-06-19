@@ -3,7 +3,7 @@
 
 const getJSON = (url, cb) => {
 
-  const xhr = new XMLHttpRequest();
+  const xhr = new XMLhttpsRequest();
 
   xhr.addEventListener('load', () => {
 
